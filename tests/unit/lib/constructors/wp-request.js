@@ -1,8 +1,8 @@
 'use strict';
 
-const WPRequest = require( '../../../../lib/constructors/wp-request' );
-const filterMixins = require( '../../../../lib/mixins/filters' );
-const checkMethodSupport = require( '../../../../lib/util/check-method-support' );
+const WPRequest = require( '../../../../src/lib/constructors/wp-request' );
+const filterMixins = require( '../../../../src/lib/mixins/filters' );
+const checkMethodSupport = require( '../../../../src/lib/util/check-method-support' );
 
 const getQueryStr = ( req ) => {
 	const query = req

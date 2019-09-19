@@ -1,6 +1,6 @@
 'use strict';
 
-const ensure = require( '../../../../lib/util/ensure' );
+const ensure = require( '../../../../src/lib/util/ensure' );
 
 describe( 'ensure utility', () => {
 	let obj;

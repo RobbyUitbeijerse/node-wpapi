@@ -2,7 +2,7 @@
 
 const WPAPI = require( '../../' );
 
-const httpTransport = require( '../../lib/http-transport' );
+const httpTransport = require( '../../src/lib/http-transport' );
 
 const credentials = require( '../helpers/constants' ).credentials;
 

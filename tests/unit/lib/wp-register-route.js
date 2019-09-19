@@ -1,9 +1,9 @@
 'use strict';
 
-const WPRequest = require( '../../../lib/constructors/wp-request' );
-const registerRoute = require( '../../../lib/wp-register-route' );
-const checkMethodSupport = require( '../../../lib/util/check-method-support' );
-const mixins = require( '../../../lib/mixins' );
+const WPRequest = require( '../../../src/lib/constructors/wp-request' );
+const registerRoute = require( '../../../src/lib/wp-register-route' );
+const checkMethodSupport = require( '../../../src/lib/util/check-method-support' );
+const mixins = require( '../../../src/lib/mixins' );
 
 describe( 'wp.registerRoute', () => {
 

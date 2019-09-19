@@ -1,6 +1,6 @@
 'use strict';
 
-const namedGroupRE = require( '../../../../lib/util/named-group-regexp' ).namedGroupRE;
+const namedGroupRE = require( '../../../../src/lib/util/named-group-regexp' ).namedGroupRE;
 
 describe( 'named PCRE group RegExp', () => {
 

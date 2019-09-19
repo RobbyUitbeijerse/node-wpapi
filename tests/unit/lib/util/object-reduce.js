@@ -8,7 +8,7 @@ describe( 'Object reduction tools:', () => {
 			fn: require( 'lodash.reduce' ),
 		}, {
 			name: 'objectReduce utility',
-			fn: require( '../../../../lib/util/object-reduce' ),
+			fn: require( '../../../../src/lib/util/object-reduce' ),
 		},
 	].forEach( ( test ) => {
 

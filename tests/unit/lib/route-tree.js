@@ -1,7 +1,7 @@
 'use strict';
 
-const routeTree = require( '../../../lib/route-tree' );
-const defaultRoutes = require( '../../../lib/data/default-routes.json' );
+const routeTree = require( '../../../src/lib/route-tree' );
+const defaultRoutes = require( '../../../src/lib/data/default-routes.json' );
 
 describe( 'route-tree utility', () => {
 

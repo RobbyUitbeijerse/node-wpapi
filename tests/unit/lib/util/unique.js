@@ -1,4 +1,4 @@
-const unique = require( '../../../../lib/util/unique' );
+const unique = require( '../../../../src/lib/util/unique' );
 
 describe( 'unique', () => {
 

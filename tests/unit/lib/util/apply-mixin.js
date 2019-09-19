@@ -1,6 +1,6 @@
 'use strict';
 
-const applyMixin = require( '../../../../lib/util/apply-mixin' );
+const applyMixin = require( '../../../../src/lib/util/apply-mixin' );
 
 describe( 'applyMixin utility', () => {
 	let obj;

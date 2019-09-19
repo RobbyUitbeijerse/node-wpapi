@@ -1,6 +1,6 @@
 'use strict';
 
-const argumentIsNumeric = require( '../../../../lib/util/argument-is-numeric' );
+const argumentIsNumeric = require( '../../../../src/lib/util/argument-is-numeric' );
 
 describe( 'argumentIsNumeric utility', () => {
 

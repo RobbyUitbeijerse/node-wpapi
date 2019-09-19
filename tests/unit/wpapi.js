@@ -3,10 +3,10 @@
 const WPAPI = require( '../../' );
 
 // Constructors, for use with instanceof checks
-const WPRequest = require( '../../lib/constructors/wp-request' );
+const WPRequest = require( '../../src/lib/constructors/wp-request' );
 
 // HTTP transport, for stubbing
-const httpTransport = require( '../../lib/http-transport' );
+const httpTransport = require( '../../src/lib/http-transport' );
 
 // Variable to use as our "success token" in promise assertions
 const SUCCESS = 'success';

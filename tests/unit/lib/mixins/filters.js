@@ -1,7 +1,7 @@
 'use strict';
 
-const filterMixins = require( '../../../../lib/mixins/filters' );
-const WPRequest = require( '../../../../lib/constructors/wp-request' );
+const filterMixins = require( '../../../../src/lib/mixins/filters' );
+const WPRequest = require( '../../../../src/lib/constructors/wp-request' );
 
 const getQueryStr = ( req ) => {
 	const query = req

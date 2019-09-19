@@ -1,6 +1,6 @@
 'use strict';
 
-const keyValToObj = require( '../../../../lib/util/key-val-to-obj' );
+const keyValToObj = require( '../../../../src/lib/util/key-val-to-obj' );
 
 describe( 'keyValToObj utility', () => {
 

@@ -1,12 +1,12 @@
 'use strict';
 
 const path = require( 'path' );
-const objectReduce = require( '../../lib/util/object-reduce' );
+const objectReduce = require( '../../src/lib/util/object-reduce' );
 const httpTestUtils = require( '../helpers/http-test-utils' );
-const unique = require( '../../lib/util/unique' );
+const unique = require( '../../src/lib/util/unique' );
 
 const WPAPI = require( '../../' );
-const WPRequest = require( '../../lib/constructors/wp-request.js' );
+const WPRequest = require( '../../src/lib/constructors/wp-request.js' );
 
 // Inspecting the titles of the returned posts arrays is an easy way to
 // validate that the right page of results was returned

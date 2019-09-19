@@ -1,6 +1,6 @@
 'use strict';
 
-const isEmptyObject = require( '../../../../lib/util/is-empty-object' );
+const isEmptyObject = require( '../../../../src/lib/util/is-empty-object' );
 
 describe( 'isEmptyObject utility', () => {
 

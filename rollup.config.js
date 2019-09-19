@@ -1,7 +1,8 @@
 const babel = require( 'rollup-plugin-babel' );
 const commonjs = require( 'rollup-plugin-commonjs' );
 const external = require( 'rollup-plugin-peer-deps-external' );
-const resolve = require( 'rollup-plugin-node-resolve' );
+const resolve  = require( 'rollup-plugin-node-resolve' );
+const json = require( 'rollup-plugin-json' );
 const pkg = require( './package.json' );
 const { terser } =  require( 'rollup-plugin-terser' );
 
@@ -15,10 +16,13 @@ module.exports = [
 			indent: false,
 		},
 		plugins: [
-			resolve(),
 			external(),
+			json(),
 			babel( {
 				exclude: 'node_modules/**',
+			} ),
+			resolve( {
+				preferBuiltins: true,
 			} ),
 			commonjs(),
 		],
@@ -32,10 +36,13 @@ module.exports = [
 			indent: false,
 		},
 		plugins: [
-			resolve(),
 			external(),
+			json(),
 			babel( {
 				exclude: 'node_modules/**',
+			} ),
+			resolve( {
+				preferBuiltins: true,
 			} ),
 			commonjs(),
 		],
@@ -49,12 +56,15 @@ module.exports = [
 			indent: false,
 		},
 		plugins: [
-			resolve(),
 			external(),
+			json(),
 			babel( {
 				exclude: 'node_modules/**',
 			} ),
-			commonjs(),
+			resolve( {
+				preferBuiltins: true,
+				browser: true,
+			} ),
 		],
 	},
 	// UMD (production)
@@ -66,12 +76,15 @@ module.exports = [
 			indent: false,
 		},
 		plugins: [
-			resolve(),
 			external(),
+			json(),
 			babel( {
 				exclude: 'node_modules/**',
 			} ),
-			commonjs(),
+			resolve( {
+				preferBuiltins: true,
+				browser: true,
+			} ),
 			terser( {
 				compress: {
 					pure_getters: true,

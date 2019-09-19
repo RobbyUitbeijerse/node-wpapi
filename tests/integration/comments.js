@@ -1,7 +1,7 @@
 'use strict';
 
 const WPAPI = require( '../../' );
-const WPRequest = require( '../../lib/constructors/wp-request.js' );
+const WPRequest = require( '../../src/lib/constructors/wp-request.js' );
 
 // Variable to use as our 'success token' in promise assertions
 const SUCCESS = 'success';

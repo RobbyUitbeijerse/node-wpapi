@@ -1,6 +1,6 @@
 'use strict';
 
-const autodiscovery = require( '../../../lib/autodiscovery' );
+const autodiscovery = require( '../../../src/lib/autodiscovery' );
 
 describe( 'autodiscovery helper methods', () => {
 

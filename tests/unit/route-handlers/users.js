@@ -1,7 +1,7 @@
 'use strict';
 
-const WPAPI = require( '../../../wpapi' );
-const WPRequest = require( '../../../lib/constructors/wp-request' );
+const WPAPI = require( '../../../' );
+const WPRequest = require( '../../../src/lib/constructors/wp-request' );
 
 describe( 'wp.users', () => {
 	let site;

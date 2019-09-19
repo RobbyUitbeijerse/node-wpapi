@@ -1,6 +1,6 @@
 'use strict';
 
-const paramSetter = require( '../../../../lib/util/parameter-setter' );
+const paramSetter = require( '../../../../src/lib/util/parameter-setter' );
 
 describe( 'parameterSetter utility', () => {
 	let obj;

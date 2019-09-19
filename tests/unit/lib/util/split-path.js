@@ -1,6 +1,6 @@
 'use strict';
 
-const splitPath = require( '../../../../lib/util/split-path' );
+const splitPath = require( '../../../../src/lib/util/split-path' );
 
 describe( 'splitPath utility', () => {
 
