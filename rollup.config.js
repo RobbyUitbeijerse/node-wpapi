@@ -3,9 +3,10 @@ const commonjs = require( 'rollup-plugin-commonjs' );
 const external = require( 'rollup-plugin-peer-deps-external' );
 const resolve = require( 'rollup-plugin-node-resolve' );
 const pkg = require( './package.json' );
+const { terser } =  require( 'rollup-plugin-terser' );
 
 module.exports = [
-	// CJS node
+	// CJS module
 	{
 		input: 'src/wpapi.js',
 		output: {
@@ -22,7 +23,7 @@ module.exports = [
 			commonjs(),
 		],
 	},
-	// ES modules
+	// ES module
 	{
 		input: 'src/wpapi.js',
 		output: {
@@ -39,7 +40,7 @@ module.exports = [
 			commonjs(),
 		],
 	},
-	// UMD legacy browser
+	// UMD (development)
 	{
 		input: 'src/wpapi.js',
 		output: {
@@ -54,6 +55,31 @@ module.exports = [
 				exclude: 'node_modules/**',
 			} ),
 			commonjs(),
+		],
+	},
+	// UMD (production)
+	{
+		input: 'src/wpapi.js',
+		output: {
+			file: 'dist/umd/wpapi.min.js',
+			format: 'umd',
+			indent: false,
+		},
+		plugins: [
+			resolve(),
+			external(),
+			babel( {
+				exclude: 'node_modules/**',
+			} ),
+			commonjs(),
+			terser( {
+				compress: {
+					pure_getters: true,
+					unsafe: true,
+					unsafe_comps: true,
+					warnings: false,
+				},
+			} ),
 		],
 	},
 ];
